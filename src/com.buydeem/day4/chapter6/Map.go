@@ -28,4 +28,9 @@ func main() {
 	delete(m2, "age")
 	_, ok = m2["age"]
 	fmt.Printf("m2[\"age\"] existe :%t\n", ok)
+
+	m4 := map[string]string{"name": "tom", "age": "18", "sex": "男"}
+	for k, v := range m4 {
+		fmt.Printf("k = %s,v = %s\n", k, v)
+	}
 }
